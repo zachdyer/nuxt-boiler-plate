@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "bootstrap-vue": "^2.15.0",
+    "bootstrap-vue": "^2.19.0",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
-    "push-dir": "^0.4.1"
+    "fibers": "^5.0.0",
+    "push-dir": "^0.4.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0"
   }
 }

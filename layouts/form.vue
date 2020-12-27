@@ -9,7 +9,7 @@ export default {
   head() {
     return {
       bodyAttrs: {
-        class: "layout-default",
+        class: "layout-form text-center",
       },
     };
   },
