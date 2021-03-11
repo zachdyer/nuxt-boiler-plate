@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Nav />
     <Nuxt />
   </div>
 </template>
@@ -9,12 +10,12 @@ export default {
   head() {
     return {
       bodyAttrs: {
-        class: "layout-default",
+        // class: "layout-default",
       },
     };
   },
+
 };
 </script>
 
-<style>
-</style>
+

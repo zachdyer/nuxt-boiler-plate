@@ -3,7 +3,8 @@
     <div
       class="container d-flex flex-column flex-md-row justify-content-between"
     >
-      <NuxtLink class="py-2" to="/" aria-label="Product">
+      <NuxtLink v-for="link in menu.records" :key="link.fields.Name" to="/" class="py-2 d-none d-md-inline-block">{{link.fields.Name}}</NuxtLink>
+      <!-- <NuxtLink class="py-2" to="/" aria-label="Product">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -27,15 +28,35 @@
       </NuxtLink>
       <NuxtLink class="py-2 d-none d-md-inline-block" to="/register"
         >Register</NuxtLink
-      >
-      <a class="py-2 d-none d-md-inline-block" href="#">Login</a>
+      > -->
+      <!-- <a class="py-2 d-none d-md-inline-block" href="#">About</a>
       <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
       <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
       <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a> -->
     </div>
   </nav>
 </template>
 
 <style>
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      menu: []
+    }
+  },
+  async fetch() {
+    let base = 'apppwZva5vqAmdIfx'
+    let table = 'Links'
+    let view = 'Main Menu'
+    this.menu = await this.$axios.$get(
+      `https://api.airtable.com/v0/${base}/${table}?api_key=keynZf6Bg5j58ZXjN&view=${view}`
+    )
+    console.log(this.menu)
+  }
+};
+</script>
+

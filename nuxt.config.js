@@ -29,7 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
-    "~/assets/css/main.scss"
+    // "~/assets/css/main.scss"
   ],
   /*
   ** Plugins to load before mounting the App
@@ -46,6 +46,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxt/content'
   ],
   /*
   ** Nuxt.js modules
@@ -53,6 +54,8 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
   ],
   /*
   ** Build configuration
@@ -62,5 +65,10 @@ export default {
   },
   router: {
     base: '/nuxt-boiler-plate/'
+  },
+  server: {
+    port: 80, // default: 3000
+    host: '0.0.0.0', // default: localhost,
+    timing: false
   }
 }
