@@ -46,7 +46,8 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Nuxt.js modules
@@ -56,6 +57,7 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Build configuration
