@@ -1,0 +1,16 @@
+[
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\zachd\\\\OneDrive\\\\Documents\\\\GitHub\\\\nuxt-boiler-plate\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_3e415a6e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\zachd\\\\OneDrive\\\\Documents\\\\GitHub\\\\nuxt-boiler-plate\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7735321c"
+  }
+]
